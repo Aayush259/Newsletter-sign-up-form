@@ -3,3 +3,163 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --Tomato: hsl(4, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: var(--Charcoal-Grey);
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: var(--White);
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+.text-content {
+    width: 50%;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    color: var(--Dark-Slate-Grey);
+}
+
+.text-content h1 {
+    font-size: 3rem;
+}
+
+.text-content p {
+    margin-top: 1.1rem;
+    line-height: 1.5;
+}
+
+.text-content ul {
+    margin-top: 1.1rem;
+    list-style: none;
+}
+
+.text-content ul li {
+    background: url("../images/images/icon-list.svg") no-repeat left center;
+    padding-left: 30px;
+    margin-top: 12px;
+    line-height: 1.3;
+}
+
+.text-content form {
+    margin-top: 2rem;
+    padding-right: 0.6rem;
+}
+
+.text-content form label {
+    font-size: small;
+    font-weight: 700;
+    color: var(--Dark-Slate-Grey);
+    display: block;
+}
+
+#email {
+    margin-top: 0.5rem;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid var(--Grey);
+    border-radius: 5px;
+}
+
+.text-content form button {
+    margin-top: 1rem;
+    padding: 13px;
+    font-weight: 400;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+}
+
+.image {
+    align-self: flex-end;
+    width: 50%;
+    height: 100%;
+    padding-left: 3.2rem;
+}
+
+.image img {
+    height: 99%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1280px) {
+    main {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    main {
+        width: 98%;
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+    
+    .text-content {
+        padding-left: 1rem;
+        padding-right: 0;
+        padding-top: 1.4rem;
+    }
+    
+    .text-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .text-content p {
+        margin-top: 0.9rem;
+    }
+    
+    .text-content ul {
+        margin-top: 0.9rem;
+    }
+    
+    .text-content form {
+        margin-top: 1.4rem;
+    }
+    
+    #email {
+        margin-top: 0.3rem;
+    }
+    
+    .text-content form button {
+        margin-top: 0.6rem;
+    }
+
+    .image {
+        padding-left: 0.6rem;
+    }
+}
