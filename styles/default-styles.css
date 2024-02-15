@@ -1,3 +1,5 @@
+/* This stylesheet is for desktop devices */
+
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +27,7 @@ body {
 main {
     background-color: var(--White);
     width: 60%;
-    height: 70%;
+    height: 80%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
@@ -58,7 +60,7 @@ main {
 }
 
 .text-content ul li {
-    background: url("../images/images/icon-list.svg") no-repeat left center;
+    background: url("../images/images/icon-list.svg") no-repeat left top;
     padding-left: 30px;
     margin-top: 12px;
     line-height: 1.3;
@@ -111,6 +113,7 @@ main {
 @media only screen and (max-width: 1280px) {
     main {
         width: 80%;
+        height: 85%;
     }
 }
 

@@ -1,0 +1,93 @@
+/* This stylesheet is for mobile devices */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Tomato: hsl(4, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: var(--White);
+    font-size: 16px;
+}
+
+.image img {
+    height: 0;
+    width: 0;
+}
+
+.image {
+    height: 284px;
+    width: 100vw;
+    background: url("../images/images/illustration-sign-up-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 25px 25px;
+}
+
+.text-content {
+    padding: 1.6rem;
+}
+
+.text-content h1 {
+    color: var(--Dark-Slate-Grey);
+}
+
+.text-content p {
+    margin-top: 1rem;
+    line-height: 1.4;
+}
+
+.text-content ul {
+    list-style: none;
+    list-style-position: inside;
+    line-height: 1.2;
+    margin-top: 1.5rem;
+}
+
+.text-content ul li {
+    background: url("../images/images/icon-list.svg") no-repeat left top;
+    padding: 2px;
+    padding-left: 35px;
+    margin-top: 8px;
+}
+
+.text-content form {
+    margin-top: 2rem;
+}
+
+.text-content form label {
+    color: var(--Dark-Slate-Grey);
+    font-weight: 700;
+    font-size: small;
+    display: block;
+}
+
+.text-content form input, .text-content form button {
+    width: 95%;
+    border-radius: 6px;
+}
+
+.text-content form input {
+    padding: 0.5rem;
+    font-size: 15px;
+    margin-top: 0.5rem;
+    border: 1px solid var(--Grey);
+}
+
+.text-content form button {
+    padding: 0.7rem;
+    margin-top: 1rem;
+    border: none;
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+}
