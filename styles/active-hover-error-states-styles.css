@@ -8,7 +8,7 @@
     --RedBackground: rgba(255, 125, 125, 0.397);
 }
 
-.text-content form button:hover {
+button:hover {
     cursor: pointer;
     background-color: var(--Red);
     box-shadow: 0 15px 2rem 0.1rem var(--Tomato);

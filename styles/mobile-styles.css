@@ -1,11 +1,5 @@
 /* This stylesheet is for mobile devices */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --Red : hsl(0, 100%, 50%);
     --Tomato: hsl(4, 100%, 67%);
@@ -37,6 +31,7 @@ body {
 
 .text-content {
     padding: 1.6rem;
+    background-color: var(--White);
 }
 
 .text-content h1 {

@@ -10,10 +10,19 @@ const LoadStyleSheet = () => {
 
     // If viewport width is less than or equal to 520 then load styles for mobile else load default styles
     if (window.innerWidth <= 520) {
-        LinkElement.href = "./styles/mobile-styles.css";
+        try {
+            LinkElement.href = "./styles/mobile-styles.css";
+        }catch {
+            return;
+        }
     }
     else {
-        LinkElement.href = "./styles/default-styles.css";
+        try {
+            LinkElement.href = "./styles/default-styles.css";
+        }
+        catch {
+            return;
+        }
     }
 }
 
