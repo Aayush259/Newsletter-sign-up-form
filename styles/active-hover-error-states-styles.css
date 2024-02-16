@@ -1,0 +1,26 @@
+/* This stylesheet is for active and hover states for form elements */
+
+:root {
+    --Tomato: hsl(4, 100%, 67%);
+    --Red : hsl(0, 100%, 50%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --RedBackground: rgba(255, 125, 125, 0.397);
+}
+
+.text-content form button:hover {
+    cursor: pointer;
+    background-color: var(--Red);
+    box-shadow: 0 15px 2rem 0.1rem var(--Tomato);
+}
+
+#email:active, #email:focus {
+    border-color: var(--Dark-Slate-Grey);
+    outline: 0;
+}
+
+.show-error {
+    border: 1px solid var(--Red) !important;
+    color: var(--Red) !important;
+    background-color: var(--RedBackground);
+}

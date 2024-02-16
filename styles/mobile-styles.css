@@ -7,6 +7,7 @@
 }
 
 :root {
+    --Red : hsl(0, 100%, 50%);
     --Tomato: hsl(4, 100%, 67%);
     --White: hsl(0, 0%, 100%);
     --Dark-Slate-Grey: hsl(234, 29%, 20%);
@@ -66,10 +67,18 @@ body {
 }
 
 .text-content form label {
+    width: 95%;
     color: var(--Dark-Slate-Grey);
     font-weight: 700;
     font-size: small;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-message {
+    color: var(--Red);
 }
 
 .text-content form input, .text-content form button {
