@@ -1,5 +1,11 @@
 /* This stylesheet is for desktop devices */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --Red : hsl(0, 100%, 50%);
     --Tomato: hsl(4, 100%, 67%);

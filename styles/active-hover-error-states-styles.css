@@ -1,5 +1,11 @@
 /* This stylesheet is for active and hover states for form elements */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --Tomato: hsl(4, 100%, 67%);
     --Red : hsl(0, 100%, 50%);

@@ -18,12 +18,13 @@ body {
     background-color: var(--Charcoal-Grey);
     font-family: Roboto, sans-serif;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 #success {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--White);
     padding: 3.5rem;
     width: 70%;
